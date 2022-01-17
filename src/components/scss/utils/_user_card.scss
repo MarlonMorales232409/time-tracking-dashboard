@@ -1,0 +1,184 @@
+
+.container{
+  width: 75%;
+  height: 100vh;
+  // @include centerElement;
+  @include setGrid(4,2);
+  justify-items: center;
+  align-content: center;
+
+}
+
+.cards{
+  grid-row: 1 / -1;
+  text-align: justify;
+  background-color: $darkBlue;
+  border-radius: 15px;
+}
+
+.cards-user{
+ background-color: lighten($color: $blue, $amount: 5);
+ border-radius: 15px;
+ padding: 1.3rem 0 2rem 0;
+ @include setFlex;
+  #{&}__info-img{
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+    border: solid 3px $paleBlue;
+    @include setMargin;
+  }
+
+  #{&}__report-container{
+    @include setMargin;
+    @include setFlex
+  }
+
+  #{&}__report{
+    font-size: .75rem;
+    color: $paleBlue;
+    font-weight: map-get($map: $fontWeights, $key: medium);
+    margin-top: 1.5rem;
+    margin-bottom: .7rem;
+  }
+
+  #{&}__name, #{&}__last-name{
+    font-size: 2rem;
+    color: $paleBlue;
+    font-weight: map-get($map: $fontWeights, $key: regular);
+  }
+  #{&}__last-name{
+    margin-bottom: 1rem;
+  }
+}
+
+.buttoms{
+  @include setFlex;
+  padding-bottom: 1.4rem;
+  #{&}__daily, #{&}__weekly, #{&}__monthly {
+    @include setMargin;
+    color: lighten($color: $darkBlue, $amount: 20);
+    padding: 5px;
+    font-weight: map-get($map: $fontWeights, $key: bold);
+    font-size: .85rem;
+
+    &:hover{
+      color: $paleBlue;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px){
+  .container{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .container{
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 1105px){
+  .container{
+    width: 100%;
+    @include setGrid(3,3);
+    align-content: center;
+  }
+
+  .cards-user {
+    height: 55%;
+  }
+
+  .cards{
+    grid-row: 1 / -1;
+    text-align: justify;
+    background-color: $darkBlue;
+    border-radius: 15px;
+  }
+
+  .buttoms{
+    #{&}__daily, #{&}__weekly, #{&}__monthly {
+      margin: 3rem 0 0 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .container{
+    @include setGrid(2,2);
+    align-content: center;
+    overflow: auto;
+    row-gap: 10px;
+    column-gap: 20px;
+    height: initial;
+    margin: 20px 0;
+  }
+
+  .cards{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin-bottom: 5px;
+  }
+
+  .cards-user{
+    flex-flow: row nowrap;
+    align-items: center;
+
+    #{&}__info-img{
+      width: 20%;
+    }
+
+    #{&}__report-container{
+      flex-flow: row;
+      align-items: baseline;
+    }
+
+    #{&}__name{
+      margin: 0 23px;
+    }
+  }
+
+  .buttoms{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 605px){
+  .container{
+    padding: 13px;
+    grid-template-columns: 1fr;
+  }
+
+  .cards-user{
+    #{&}__report{
+      font-size: .40rem;
+    }
+  
+    #{&}__name, #{&}__last-name{
+      font-size: 1.4rem;
+    }
+    #{&}__name{
+      margin: 0 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 340px){
+  .cards-user{
+    #{&}__name{
+      margin: 0 5px;
+    }
+  }
+}

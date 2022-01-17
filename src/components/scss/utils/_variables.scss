@@ -1,0 +1,64 @@
+// Colors
+// Primary
+$blue: hsl(246, 80%, 60%);
+
+$lightRed: hsl(15, 100%, 70%); // Work
+
+$softBlue: hsl(195, 74%, 62%); // Play
+
+$red: hsl(348, 100%, 68%); // Study
+
+$limeGreen: hsl(145, 58%, 55%); // Exercise
+
+$violet: hsl(264, 64%, 52%); // Social
+
+$softOrange: hsl(43, 84%, 65%); // Self Care
+
+// Natural
+
+$veryDarkBlue: hsl(226, 43%, 10%);
+$darkBlue: hsl(235, 46%, 20%);
+$desaturated: hsl(235, 45%, 61%);
+$paleBlue: hsl(236, 100%, 87%);
+
+$fontSize: 18px;
+
+$fontWeights: (
+  "regular": 300,
+  "mediun": 400,
+  "bold": 500,
+);
+
+@mixin setGrid($col, $row) {
+  display: grid;
+  grid-template-columns: repeat($col, minmax(200px, 280px));
+  grid-template-rows: repeat($row, 230px);
+  grid-auto-rows: 230px;
+  justify-content: center;
+  gap:2px;
+}
+
+@mixin centerElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin setMargin {
+  margin: 1rem 0 0 1rem;
+}
+
+@mixin setFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+@function colorLighter($color, $amount) {
+  @return (color: lighten($color: $color, $amount: $amount));
+}
+
+@function colorDarker($color, $amount) {
+  @return (color: darken($color: $color, $amount: $amount));
+}
+

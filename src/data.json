@@ -1,0 +1,118 @@
+{
+  "list":[
+    {
+      "id": 1,
+      "title": "Work",
+      "icon": "icon-work.svg",
+      "timeframes": {
+        "daily": {
+          "current": "5hrs",
+          "previous": "Last Day - 7hrs"
+        },
+        "weekly": {
+          "current": "32hrs",
+          "previous": "Last Week - 36hrs"
+        },
+        "monthly": {
+          "current": "103hrs",
+          "previous": "Last Monthly - 128hrs"
+        }
+      }
+    },
+    {
+      "id":2,
+      "title": "Play",
+      "icon": "icon-play.svg",
+      "timeframes": {
+        "daily": {
+          "current": "1hrs",
+          "previous": "Last Day - 2hrs"
+        },
+        "weekly": {
+          "current": "10hrs",
+          "previous": "Last Week - 8hrs"
+        },
+        "monthly": {
+          "current": "23hrs",
+          "previous": "Last Month - 29hrs"
+        }
+      }
+    },
+    {
+      "id":3,
+      "title": "Study",
+      "icon": "icon-study.svg",
+      "timeframes": {
+        "daily": {
+          "current": "0hrs",
+          "previous": "Last Day - 1hrs"
+        },
+        "weekly": {
+          "current": "4hrs",
+          "previous": "Last Week - 7hrs"
+        },
+        "monthly": {
+          "current": "13hrs",
+          "previous": "Last Month - 19hrs"
+        }
+      }
+    },
+    {
+      "id":4,
+      "title": "Exercise",
+      "icon": "icon-exercise.svg",
+      "timeframes": {
+        "daily": {
+          "current": "1hrs",
+          "previous": "Last Day - 1hrs"
+        },
+        "weekly": {
+          "current": "4hrs",
+          "previous": "Last Week - 5hrs"
+        },
+        "monthly": {
+          "current": "11hrs",
+          "previous": "Last Month - 18hrs"
+        }
+      }
+    },
+    {
+      "id":5,
+      "title": "Social",
+      "icon": "icon-social.svg",
+      "timeframes": {
+        "daily": {
+          "current": "1hrs",
+          "previous": "Last Day - 3hrs"
+        },
+        "weekly": {
+          "current": "5hrs",
+          "previous": "Last Week - 10hrs"
+        },
+        "monthly": {
+          "current": "21hrs",
+          "previous": "Last Month - 23hrs"
+        }
+      }
+    },
+    {
+      "id":6,
+      "title": "Self Care",
+      "icon": "icon-self-care.svg",
+      "timeframes": {
+        "daily": {
+          "current": "1hrs",
+          "previous": "Last Day - 1hrs"
+        },
+        "weekly": {
+          "current": "2hrs",
+          "previous": "Last Week - 2hrs"
+        },
+        "monthly": {
+          "current": "7hrs",
+          "previous": "Last Month - 11hrs"
+        }
+      }
+    }
+  ]
+}
